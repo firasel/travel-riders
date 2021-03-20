@@ -3,7 +3,7 @@
     font-size: 30px;
     font-weight: 700;
 }
-.navbarBtn a a{
+.navbarBtn a{
     color: #272727f5;
     font-weight: bold;
     font-size: 20px;
@@ -28,11 +28,9 @@
     background-color: rgb(247, 63, 30) !important;
     transition: all 0.5s;
 }
-.buttonStyle:hover a{
-    background-color: rgb(247, 63, 30) !important;
-}
 
-.buttonStyle a {
+
+.buttonStyle {
     color: white !important;
 }
 .nameStyle{

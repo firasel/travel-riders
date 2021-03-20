@@ -26,10 +26,13 @@
 }
 .textLink{
     color: tomato;
+    background: none;
+    border: 0;
 }
 .textLink:hover{
-    color: tomato;
+    color: rgb(255, 72, 40);
     cursor: pointer;
+    text-decoration: underline;
 }
 .buttonDesign{
     background-color: tomato;

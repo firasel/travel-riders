@@ -24,22 +24,12 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="navbarItem">
                         <Nav className="ml-auto navbarBtn" >
-                            <Nav.Link>
-                                <Link to="/home">Home</Link>
-                            </Nav.Link>
-                            <Nav.Link>
-                                <Link to="/destination/Bike">Destination</Link>
-                            </Nav.Link>
-                            <Nav.Link>
-                                <Link to="/blog">Blog</Link>
-                            </Nav.Link>
-                            <Nav.Link>
-                                <Link to="/contact">Contact</Link>
-                            </Nav.Link>
+                            <Nav.Link as={Link} to="/home">Home</Nav.Link>
+                            <Nav.Link as={Link} to="/destination/Bike" >Destination</Nav.Link>
+                            <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+                            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                             {!loggedInUser?.email &&
-                                <Nav.Link className="buttonStyle">
-                                    <Link to="/login">Login</Link>
-                                </Nav.Link>
+                                <Nav.Link className="buttonStyle" as={Link} to="/login">Login</Nav.Link>
                             }
                             {
                                 loggedInUser?.email && 

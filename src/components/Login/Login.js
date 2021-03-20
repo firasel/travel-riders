@@ -91,7 +91,7 @@ const Login = () => {
             <div className="loginForm mt-4">
                 <div className="formDesign">
                     <Form onSubmit={handleSubmit(handleSignIn)}>
-                        <h3>LogIn</h3>
+                        <h3>{newUser?'Sign Up':'LogIn'}</h3>
                         {
                             newUser && <Form.Group>
                                             <Form.Control className="inputDesign" type="text" placeholder="Name" name="name" ref={register({ required: true })} />
@@ -125,16 +125,25 @@ const Login = () => {
                         }
 
                         <Form.Group className="d-flex justify-content-between mt-3" controlId="formBasicCheckbox">
-                            <Form.Check onChange={()=>setNewUser(!newUser)} type="checkbox" label="Remember Me" />
-                            <a href="#" className="textLink">Forgot PassWord</a>
+                            <Form.Check type="checkbox" label="Remember Me" />
+                            <button className="textLink">Forgot PassWord</button>
                         </Form.Group>
 
                         <Form.Group>
-                            <Form.Control className="buttonDesign" type="submit" value="LogIn" />
+                            <Form.Control className="buttonDesign" type="submit" value={newUser?'SignUp':'LogIn'} />
                         </Form.Group>
-                        <Form.Group className="text-center mt-3">
-                            <span>Don't have an account? <a href="#" className="textLink">Create an account</a></span>
-                        </Form.Group>
+                        {
+                            !newUser && 
+                            <Form.Group className="text-center mt-3">
+                                <span>Don't have an account? <button onClick={()=>setNewUser(!newUser)} className="textLink">Create an account</button></span>
+                            </Form.Group>
+                        }
+                        {
+                            newUser &&
+                            <Form.Group className="text-center mt-3">
+                                <span>Have an account? <button onClick={()=>setNewUser(!newUser)} className="textLink">LogIn</button></span>
+                            </Form.Group>
+                        }
                     </Form>
                 </div>
                 <div className="orStyle" >
