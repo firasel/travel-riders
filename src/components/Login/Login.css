@@ -1,0 +1,118 @@
+.formDesign{
+    width: 65%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding:15px;
+    margin: auto;
+}
+@media only screen and (max-width: 768px) {
+    .formDesign{
+        width: 95%;
+    }
+}
+
+
+.loginForm{
+    width: 100%;
+    height: auto;
+}
+.inputDesign{
+    border:0px;
+    border-bottom: 2px solid rgb(180, 180, 180);
+    border-radius: 0;
+    padding: 3px 0;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+.textLink{
+    color: tomato;
+}
+.textLink:hover{
+    color: tomato;
+    cursor: pointer;
+}
+.buttonDesign{
+    background-color: tomato;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    color:white;
+    font-size:20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.buttonDesign:hover{
+    background-color: rgb(231, 69, 41);
+    transition:all 0.5s;
+}
+
+.orStyle {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 1.5rem;
+}
+.orStyle span {
+    margin: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+.orStyle span::before {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 1px;
+    background: gray;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+}
+.orStyle span::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 1px;
+    background: gray;
+    position: absolute;
+    right: 15%;
+    top: 50%;
+}
+.otherSignInBtn{
+    width: 45%;
+    margin: auto;
+}
+.otherSignInBtn button {
+    width: 100%;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 25px;
+    background: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+}
+.otherSignInBtn Button:hover{
+    background: rgb(231, 231, 231);
+    color: black;
+    border: 1px solid black;
+    transition: all 0.4s;
+}
+
+@media only screen and (max-width: 576px) {
+    .iconDesign{
+        display: none;
+    }
+    .otherSignInBtn button {
+        width: 100%;
+        margin: 1rem;
+        border: 0;
+        font-size: 23px;
+    }
+    .otherSignInBtn {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

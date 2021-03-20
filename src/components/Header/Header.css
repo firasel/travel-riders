@@ -1,0 +1,44 @@
+.titleStyle{
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbarBtn a a{
+    color: #272727f5;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navbarBtn a{
+    padding: 5px;
+    margin: 4px 2px;
+}
+.navbarBtn a:hover {
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.buttonStyle{
+    background-color: tomato;
+    border: 0px;
+    border-radius: 5px;
+}
+.buttonStyle:hover{
+    background-color: rgb(247, 63, 30) !important;
+    transition: all 0.5s;
+}
+.buttonStyle:hover a{
+    background-color: rgb(247, 63, 30) !important;
+}
+
+.buttonStyle a {
+    color: white !important;
+}
+.nameStyle{
+    font-size: 17px;
+    color: tomato;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-left: 9px;
+}

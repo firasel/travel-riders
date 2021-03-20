@@ -1,0 +1,8 @@
+.homeBackground{
+    background-image: url('https://i.ibb.co/q52YkRh/Bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}

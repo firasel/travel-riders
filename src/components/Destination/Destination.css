@@ -1,0 +1,29 @@
+.searchForm{
+    width:100%;
+    padding: 2rem;
+    background: rgb(180, 180, 180);
+    border: 0px;
+    border-radius: 8px;
+}
+.searchAddress {
+    background: #ff654a;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 1rem !important;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+.searchResult{
+    overflow: hidden;
+    background: white;
+    border-radius: 8px;
+    min-height: 4rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+.searchDetail{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
