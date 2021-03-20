@@ -7,7 +7,6 @@ import "./Destination.css";
 import { searchResult } from './SearchResult';
  
 const Destination = () => {
-
     const {rideType} = useParams();
 
     const [ride,setRide]=useState([]);
@@ -69,9 +68,9 @@ const Destination = () => {
                         isAddress && 
                         <Row>
                             <Col lg={12} className="searchAddress">
-                                <ul>
-                                    <li>{address.pickFrom}</li>
-                                    <li>{address.pickTo}</li>
+                                <ul className="ulStyleFromTo">
+                                    <li className="listStyle">{address.pickFrom}</li>
+                                    <li className="listStyle">{address.pickTo}</li>
                                 </ul>
                             </Col>
                             {searchResult(ride)}

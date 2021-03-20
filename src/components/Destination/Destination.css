@@ -27,3 +27,17 @@
     justify-content: space-between;
     padding-right: 2rem;
 }
+.ulStyleFromTo{
+    position: relative;
+    list-style: disc;
+    margin: 0;
+}
+.listStyle::before{
+    content: '';
+    width: 2px;
+    height: 28px;
+    background: white;
+    position: absolute;
+    top: 13px;
+    left: 24px;
+}

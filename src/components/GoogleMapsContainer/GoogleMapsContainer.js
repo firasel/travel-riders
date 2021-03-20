@@ -6,30 +6,14 @@ import {
 
 
 const GoogleMapsContainer = () => {
-  const state={
-    address:'',
-    city:'',
-    area:'',
-    zoom:14,
-    mapPosition:{
-      lat:0,
-      lng:0,
-    },
-    markerPosition:{
-      lat:0,
-      lng:0,
-    }
-  }
-
-
   const MapWithAMarker = withScriptjs(withGoogleMap(props =>
     <GoogleMap
-      defaultZoom={8}
-      defaultCenter={{ lat: -34.397, lng: 150.644 }}
+      defaultZoom={16}
+      defaultCenter={{ lat: 22.375440, lng: 91.848526 }}
     >
       <Marker
         draggable={true}
-        position={{ lat: -34.397, lng: 150.644 }}
+        position={{ lat: 22.375440, lng: 91.848526 }}
       />
     </GoogleMap>
   ));

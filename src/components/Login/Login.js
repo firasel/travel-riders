@@ -141,7 +141,7 @@ const Login = () => {
                         {
                             newUser &&
                             <Form.Group className="text-center mt-3">
-                                <span>Have an account? <button onClick={()=>setNewUser(!newUser)} className="textLink">LogIn</button></span>
+                                <span>Already have an account? <button onClick={()=>setNewUser(!newUser)} className="textLink">LogIn</button></span>
                             </Form.Group>
                         }
                     </Form>

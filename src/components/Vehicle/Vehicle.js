@@ -5,11 +5,8 @@ import { useHistory } from 'react-router';
 import "./Vehicle.css";
 
 const Vehicle = (props) => {
-
     const {rideType,imgURL}=props.ride;
-
     const history=useHistory();
-    
     const handleCardClick=()=>{
         history.replace(`/destination/${rideType}`);
     }

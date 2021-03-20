@@ -97,20 +97,20 @@
     font-weight: 600;
     display: flex;
 }
-.otherSignInBtn Button:hover{
+.otherSignInBtn button:hover{
     background: rgb(231, 231, 231);
     color: black;
     border: 1px solid black;
     transition: all 0.4s;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 992px) {
     .iconDesign{
         display: none;
     }
     .otherSignInBtn button {
-        width: 100%;
-        margin: 1rem;
+        width: auto;
+        margin: 2rem;
         border: 0;
         font-size: 23px;
     }

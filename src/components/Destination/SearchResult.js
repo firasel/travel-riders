@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Col, Row } from 'react-bootstrap';
 import "./Destination";
 
-
 export const searchResult=(ride)=>{
     const {loadCapacity,cost,imgURL,rideType}=ride[0]?ride[0]:{};
     
